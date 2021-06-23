@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frisco ISD Navigation</title>
+
+    <!--Main CSS-->
+
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/monsters.css" />
+    <link rel="stylesheet" href="./CSS/animations.css" />
+
+    <!--FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        aria-label="Main Navigation Dropdown"
+        class="navigation"
+        role="navigation"
+      >
+        <div class="logo">
+          <img src="./img/fisd-logo-white-rgb.svg" alt="Frisco ISD logo" />
+        </div>
+        <ul class="nav">
+          <li class="nav__primary-item">
+            <a href="/">NEWS</a>
+            <div class="display__onHover animated fadeIn">
+              <a href="/" class="animation__underline">District News</a>
+              <a href="/" class="animation__underline">Inside Frisco ISD</a>
+              <a href="/" class="animation__underline"
+                >Connect With Frisco ISD</a
+              >
+              <a href="/" class="animation__underline"
+                >Frisco ISD Athletics News</a
+              >
+            </div>
+          </li>
+
+          <li class="nav__primary-item about">
+            <a href="/"> ABOUT</a>
+            <div class="column animated fadeIn">
+              <div class="column__left animated fadeIn animation__underline">
+                <a href="/" class="animation__underline">Board of Trustees</a>
+                <a href="/" class="animation__underline">Bond Programs</a>
+                <a href="/" class="animation__underline">Calendars</a>
+                <a href="/" class="animation__underline">Community Folder</a>
+                <a href="/" class="animation__underline">District Leadership</a>
+                <a href="/" class="animation__underline"
+                  >District of Innovation</a
+                >
+                <a href="/" class="animation__underline">District Overview</a>
+                <a href="/" class="animation__underline"
+                  >Mission, Vision & Beliefs</a
+                >
+              </div>
+              <div
+                class="
+                  column__middle
+                  animated
+                  fadeIn
+                  animation__underline
+                  padding-bottom
+                "
+              >
+                <a href="/" class="animation__underline">Early History</a>
+                <a href="/" class="animation__underline">Enrollment</a>
+                <a href="/" class="animation__underline">Facility Map</a>
+                <a href="/" class="animation__underline"
+                  >Financial Transparency</a
+                >
+                <a href="/" class="animation__underline">Government Affairs</a>
+                <a href="/" class="animation__underline">New to Frisco ISD</a>
+                <a href="/" class="animation__underline"
+                  >Public Information Requests</a
+                >
+                <a href="/" class="animation__underline">Staff Email Search</a>
+                <a href="/" class="animation__underline">Strategic Planning</a>
+              </div>
+
+              <div
+                id="column__right"
+                class="column__right animated fadeIn animation__underline"
+              >
+                <a href="/" class="button button__light_green">Parents</a>
+
+                <a href="/" class="button button__yellow">Students</a>
+
+                <a href="/" class="button button__orange">Community</a>
+                <a href="/" class="button button__light_blue">Staff</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav__primary-item animation__underline">
+            <a href="/font"> DEPARTMENTS </a>
+          </li>
+          <li class="nav__primary-item">
+            <a href="/color">SCHOOLS</a>
+          </li>
+          <li class="nav__primary-item">
+            <a href="/color">EMPLOYMENT</a>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <div class="icons__search">
+            <a href="/"><i class="fas fa-search active"></i></a>
+          </div>
+          <div class="icons__search">
+            <a href="/"><i class="fab fa-twitter social"></i></a>
+          </div>
+          <div class="icons__search">
+            <a href="/"><i class="fab fa-facebook"></i></a>
+          </div>
+          <div class="icons__search">
+            <a href="/"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="icons__search">
+            <a href="/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Weird Monsters</h1>
+      <div id="app"></div>
+    </div>
+
+    <script src="JS/app.js"></script>
+    <script src="JS/monsters.js"></script>
+  </body>
+</html>
