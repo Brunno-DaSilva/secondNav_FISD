@@ -147,6 +147,7 @@ body header .navigation .nav li:hover .display__onHover {
 body header .navigation .nav li:hover .display__onHover a {
   color: #184366 !important;
   padding: 0.5rem 0;
+  text-transform: capitalize;
 }
 
 body header .navigation .nav li a {
@@ -199,8 +200,8 @@ body header .navigation .nav .about .column .button {
 }
 
 body header .navigation .nav .about .column .button:hover {
-  -webkit-box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 body header .navigation .nav .about .column .button__orange {
@@ -253,9 +254,9 @@ body header .navigation .nav .about:hover .column .column__left {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
