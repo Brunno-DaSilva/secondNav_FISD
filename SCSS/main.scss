@@ -92,7 +92,7 @@ body {
             position: absolute;
             top: 100%;
             padding: 0.9rem;
-            background-color: #f5f5f5;
+            background-color: var(--dark-blue);
             border-radius: 0.25rem;
             z-index: 999;
             display: none;
@@ -108,7 +108,7 @@ body {
               0 10px 10px rgba(0, 0, 0, 0.22);
 
             a {
-              color: #184366 !important;
+              color: var(--OffWhite) !important;
               padding: 0.5rem 0;
               text-transform: capitalize;
             }
@@ -140,11 +140,12 @@ body {
             position: absolute;
             top: 100%;
             padding: 0.9rem;
-            background-color: #f5f5f5;
+            background-color: var(--OffWhite);
             border-radius: 0.25rem;
             z-index: 999;
             display: none;
             transition: ease-in-out 0.4s;
+
             /*======================
                   Buttons       
             =======================*/
@@ -192,9 +193,6 @@ body {
             .button__light_blue {
               background-color: var(--light-blue);
             }
-            a {
-              color: var(--dark-blue);
-            }
           }
           &:hover .column {
             position: absolute;
@@ -227,10 +225,17 @@ body {
               display: flex;
               flex-direction: column;
               justify-content: space-around;
+              .button__light_green,
+              .button__light_blue,
+              .button__orange,
+              .button__yellow {
+                text-transform: uppercase;
+              }
             }
 
             a {
-              color: #184366 !important;
+              color: var(--dark-blue) !important;
+              text-transform: capitalize;
               padding: 0.5rem 0;
               position: relative;
               transition: ease-in-out 0.4s;

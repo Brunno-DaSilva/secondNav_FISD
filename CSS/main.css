@@ -117,7 +117,7 @@ body header .navigation .nav li .display__onHover {
   position: absolute;
   top: 100%;
   padding: 0.9rem;
-  background-color: #f5f5f5;
+  background-color: var(--dark-blue);
   border-radius: 0.25rem;
   z-index: 999;
   display: none;
@@ -145,7 +145,7 @@ body header .navigation .nav li:hover .display__onHover {
 }
 
 body header .navigation .nav li:hover .display__onHover a {
-  color: #184366 !important;
+  color: var(--OffWhite) !important;
   padding: 0.5rem 0;
   text-transform: capitalize;
 }
@@ -169,7 +169,7 @@ body header .navigation .nav .about .column {
   position: absolute;
   top: 100%;
   padding: 0.9rem;
-  background-color: #f5f5f5;
+  background-color: var(--OffWhite);
   border-radius: 0.25rem;
   z-index: 999;
   display: none;
@@ -218,10 +218,6 @@ body header .navigation .nav .about .column .button__light_green {
 
 body header .navigation .nav .about .column .button__light_blue {
   background-color: var(--light-blue);
-}
-
-body header .navigation .nav .about .column a {
-  color: var(--dark-blue);
 }
 
 body header .navigation .nav .about:hover .column {
@@ -292,8 +288,16 @@ body header .navigation .nav .about:hover .column .column__right {
       justify-content: space-around;
 }
 
+body header .navigation .nav .about:hover .column .column__right .button__light_green,
+body header .navigation .nav .about:hover .column .column__right .button__light_blue,
+body header .navigation .nav .about:hover .column .column__right .button__orange,
+body header .navigation .nav .about:hover .column .column__right .button__yellow {
+  text-transform: uppercase;
+}
+
 body header .navigation .nav .about:hover .column a {
-  color: #184366 !important;
+  color: var(--dark-blue) !important;
+  text-transform: capitalize;
   padding: 0.5rem 0;
   position: relative;
   -webkit-transition: ease-in-out 0.4s;
