@@ -252,17 +252,19 @@ body {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        // // Uncomment for troubleshoot
+        color: var(--yellow); // // Uncomment for troubleshoot
         // border: 1px solid #bada55;
 
-        a {
-          padding: 0 1rem;
-          color: var(--OffWhite);
-          font-size: 1.2rem;
-          transition: ease-in-out 0.3s;
+        .icons__search {
+          a {
+            padding: 0 1rem;
+            color: var(--OffWhite);
+            font-size: 1.2rem;
+            transition: ease-in-out 0.3s;
 
-          &:hover {
-            color: var(--light-blue);
+            &:hover {
+              color: var(--yellow);
+            }
           }
         }
       }

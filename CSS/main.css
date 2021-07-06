@@ -315,9 +315,10 @@ body header .navigation .icons {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  color: var(--yellow);
 }
 
-body header .navigation .icons a {
+body header .navigation .icons .icons__search a {
   padding: 0 1rem;
   color: var(--OffWhite);
   font-size: 1.2rem;
@@ -325,8 +326,8 @@ body header .navigation .icons a {
   transition: ease-in-out 0.3s;
 }
 
-body header .navigation .icons a:hover {
-  color: var(--light-blue);
+body header .navigation .icons .icons__search a:hover {
+  color: var(--yellow);
 }
 
 body .animation__underline {
