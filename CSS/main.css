@@ -434,4 +434,14 @@ body .animation__underline:hover:after {
 body .padding-bottom {
   padding-bottom: 0.7rem;
 }
+
+body [data-tab-content] {
+  display: none;
+}
+
+body .active[data-tab-content] {
+  display: block !important;
+  color: var(--dark-blue);
+  background-color: #e95b37;
+}
 /*# sourceMappingURL=main.css.map */

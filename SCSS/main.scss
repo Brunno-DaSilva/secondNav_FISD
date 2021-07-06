@@ -361,4 +361,13 @@ body {
   .padding-bottom {
     padding-bottom: 0.7rem;
   }
+
+  [data-tab-content] {
+    display: none;
+  }
+  .active[data-tab-content] {
+    display: block !important;
+    color: var(--dark-blue);
+    background-color: #e95b37;
+  }
 }
