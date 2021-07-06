@@ -92,7 +92,7 @@ body {
             position: absolute;
             top: 100%;
             padding: 0.9rem;
-            background-color: var(--dark-blue);
+            background-color: var(--OffWhite);
             border-radius: 0.25rem;
             z-index: 999;
             display: none;
@@ -108,7 +108,7 @@ body {
               0 10px 10px rgba(0, 0, 0, 0.22);
 
             a {
-              color: var(--OffWhite) !important;
+              color: var(--dark-blue) !important;
               padding: 0.5rem 0;
               text-transform: capitalize;
             }
@@ -136,7 +136,7 @@ body {
           // // Uncomment for troubleshoot
           //   border: 1px solid #bada55;
 
-          .column {
+          .about__column {
             position: absolute;
             top: 100%;
             padding: 0.9rem;
@@ -194,7 +194,7 @@ body {
               background-color: var(--light-blue);
             }
           }
-          &:hover .column {
+          &:hover .about__column {
             position: absolute;
             left: -10rem;
             width: 60rem;
@@ -205,14 +205,14 @@ body {
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
               0 10px 10px rgba(0, 0, 0, 0.22);
 
-            .column__left {
+            .about__column_left {
               width: 39%;
               display: flex;
               flex-direction: column;
               justify-content: flex-start;
               align-items: flex-start;
             }
-            .column__middle {
+            .about__column_middle {
               width: 39%;
               display: flex;
               flex-direction: column;
@@ -220,7 +220,7 @@ body {
               align-items: flex-start;
             }
 
-            .column__right {
+            .about__column_right {
               width: 20%;
               display: flex;
               flex-direction: column;

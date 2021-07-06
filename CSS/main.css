@@ -117,7 +117,7 @@ body header .navigation .nav li .display__onHover {
   position: absolute;
   top: 100%;
   padding: 0.9rem;
-  background-color: var(--dark-blue);
+  background-color: var(--OffWhite);
   border-radius: 0.25rem;
   z-index: 999;
   display: none;
@@ -145,7 +145,7 @@ body header .navigation .nav li:hover .display__onHover {
 }
 
 body header .navigation .nav li:hover .display__onHover a {
-  color: var(--OffWhite) !important;
+  color: var(--dark-blue) !important;
   padding: 0.5rem 0;
   text-transform: capitalize;
 }
@@ -165,7 +165,7 @@ body header .navigation .nav .about {
   position: relative;
 }
 
-body header .navigation .nav .about .column {
+body header .navigation .nav .about .about__column {
   position: absolute;
   top: 100%;
   padding: 0.9rem;
@@ -180,7 +180,7 @@ body header .navigation .nav .about .column {
             =======================*/
 }
 
-body header .navigation .nav .about .column .button {
+body header .navigation .nav .about .about__column .button {
   display: inline-block;
   margin: 0.3em;
   padding: 2rem 3rem;
@@ -199,28 +199,28 @@ body header .navigation .nav .about .column .button {
   color: var(--dark-blue);
 }
 
-body header .navigation .nav .about .column .button:hover {
+body header .navigation .nav .about .about__column .button:hover {
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-body header .navigation .nav .about .column .button__orange {
+body header .navigation .nav .about .about__column .button__orange {
   background-color: var(--orange);
 }
 
-body header .navigation .nav .about .column .button__yellow {
+body header .navigation .nav .about .about__column .button__yellow {
   background-color: var(--yellow);
 }
 
-body header .navigation .nav .about .column .button__light_green {
+body header .navigation .nav .about .about__column .button__light_green {
   background-color: var(--light-green);
 }
 
-body header .navigation .nav .about .column .button__light_blue {
+body header .navigation .nav .about .about__column .button__light_blue {
   background-color: var(--light-blue);
 }
 
-body header .navigation .nav .about:hover .column {
+body header .navigation .nav .about:hover .about__column {
   position: absolute;
   left: -10rem;
   width: 60rem;
@@ -241,7 +241,7 @@ body header .navigation .nav .about:hover .column {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-body header .navigation .nav .about:hover .column .column__left {
+body header .navigation .nav .about:hover .about__column .about__column_left {
   width: 39%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,7 +258,7 @@ body header .navigation .nav .about:hover .column .column__left {
           align-items: flex-start;
 }
 
-body header .navigation .nav .about:hover .column .column__middle {
+body header .navigation .nav .about:hover .about__column .about__column_middle {
   width: 39%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,7 +275,7 @@ body header .navigation .nav .about:hover .column .column__middle {
           align-items: flex-start;
 }
 
-body header .navigation .nav .about:hover .column .column__right {
+body header .navigation .nav .about:hover .about__column .about__column_right {
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,14 +288,14 @@ body header .navigation .nav .about:hover .column .column__right {
       justify-content: space-around;
 }
 
-body header .navigation .nav .about:hover .column .column__right .button__light_green,
-body header .navigation .nav .about:hover .column .column__right .button__light_blue,
-body header .navigation .nav .about:hover .column .column__right .button__orange,
-body header .navigation .nav .about:hover .column .column__right .button__yellow {
+body header .navigation .nav .about:hover .about__column .about__column_right .button__light_green,
+body header .navigation .nav .about:hover .about__column .about__column_right .button__light_blue,
+body header .navigation .nav .about:hover .about__column .about__column_right .button__orange,
+body header .navigation .nav .about:hover .about__column .about__column_right .button__yellow {
   text-transform: uppercase;
 }
 
-body header .navigation .nav .about:hover .column a {
+body header .navigation .nav .about:hover .about__column a {
   color: var(--dark-blue) !important;
   text-transform: capitalize;
   padding: 0.5rem 0;
