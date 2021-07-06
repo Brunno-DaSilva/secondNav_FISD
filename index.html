@@ -28,9 +28,12 @@
         role="navigation"
       >
         <div class="logo">
-          <img src="./img/fisd-logo-white-rgb.svg" alt="Frisco ISD logo" />
+          <a href="#"
+            ><img src="./img/fisd-logo-white-rgb.svg" alt="Frisco ISD logo"
+          /></a>
         </div>
         <ul class="nav">
+          <!-- NEWS -->
           <li class="nav__primary-item">
             <a href="/">NEWS</a>
             <div class="display__onHover animated fadeIn">
@@ -56,6 +59,7 @@
               >
             </div>
           </li>
+          <!-- ABOUT -->
 
           <li class="nav__primary-item about">
             <a href="/"> ABOUT</a>
@@ -101,22 +105,90 @@
               </div>
             </div>
           </li>
-
+          <!-- DEPARTMENTS -->
           <li class="nav__primary-item animation__underline">
             <a href="https://www.friscoisd.org/departments"> DEPARTMENTS </a>
           </li>
 
+          <!-- SCHOOLS -->
           <li class="nav__primary-item">
             <a href="#">SCHOOLS</a>
           </li>
 
-          <li class="nav__primary-item">
+          <!-- EMPLOYMENT  -->
+          <li class="nav__primary-item employment">
             <a href="#">EMPLOYMENT</a>
+            <div class="employment__column display__onHover animated fadeIn">
+              <!-- COL-ONE   -->
+              <div class="employment__column_one">
+                <a class="animation__underline" href="/employment"
+                  >Employment Home</a
+                >
+                <a
+                  class="animation__underline"
+                  href="/employment/current-openings"
+                  >Job Openings</a
+                >
+                <a class="animation__underline" href="/employment/new-hires"
+                  >New Hires</a
+                >
+              </div>
+
+              <!-- COL-TWO   -->
+              <div class="employment__column_two">
+                <a
+                  class="animation__underline"
+                  href="/employment/application-for-professional-teachers-and-staff"
+                  >Teachers &amp; Staff</a
+                >
+
+                <a
+                  class="animation__underline"
+                  href="/employment/operations-clerical-and-paraprofessional-positions"
+                  >Paraprofessionals &amp; Auxiliary Employees</a
+                >
+              </div>
+
+              <!-- COL-THREE   -->
+              <div class="employment__column_three">
+                <a class="animation__underline" href="/employment/substitutes"
+                  >Substitutes</a
+                >
+
+                <a
+                  class="animation__underline"
+                  href="/employment/student-observers"
+                  >Student Observers</a
+                >
+
+                <a
+                  class="animation__underline"
+                  href="/employment/student-teachers"
+                  >Student Teachers</a
+                >
+              </div>
+
+              <!-- COL-FOUR   -->
+              <div class="employment__column_four">
+                <a
+                  class="animation__underline"
+                  href="/employment/employee-resources"
+                  >Employee Resources</a
+                >
+
+                <a
+                  class="animation__underline"
+                  href="/employment/employment-faq"
+                  >Frequently Asked Questions</a
+                >
+              </div>
+            </div>
           </li>
         </ul>
 
+        <!-- ICONS  -->
         <div class="icons">
-          <div class="icons__search">
+          <div id="icons__search" class="icons__search">
             <a href=""><i class="fas fa-search active"></i></a>
           </div>
           <div class="icons__search">

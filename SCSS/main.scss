@@ -247,6 +247,62 @@ body {
         }
       }
 
+      /*================================
+            EMPLOYMENT  Columns       
+        ================================*/
+
+      .employment {
+        // =>>// Uncomment for troubleshoot
+        // border: 1px solid #bada55;
+
+        list-style-type: none;
+        padding: 0.5rem;
+        position: relative;
+
+        .employment__column {
+          position: absolute;
+          top: 100%;
+          padding: 0.9rem;
+          border-radius: 0.25rem;
+          z-index: 999;
+          display: none;
+          transition: ease-in-out 0.4s;
+        }
+        &:hover .employment__column {
+          position: absolute;
+          left: -32rem;
+          width: 60rem;
+          display: flex;
+          flex-direction: row !important;
+          justify-content: flex-start !important;
+          align-items: stretch;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+
+          .employment__column_one,
+          .employment__column_two,
+          .employment__column_three,
+          .employment__column_four {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+          }
+          a {
+            color: var(--dark-blue) !important;
+            text-transform: capitalize;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: ease-in-out 0.4s;
+          }
+        }
+      }
+
+      /*================================
+                    ICONS
+        ================================*/
+
       .icons {
         width: 25%;
         display: flex;

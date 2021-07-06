@@ -79,6 +79,12 @@ body header .navigation {
   width: 75%;
   background: var(--dark-blue);
   padding: 1.1rem 0.5rem;
+  /*================================
+            EMPLOYMENT  Columns       
+        ================================*/
+  /*================================
+                    ICONS
+        ================================*/
 }
 
 body header .navigation .logo {
@@ -296,6 +302,71 @@ body header .navigation .nav .about:hover .about__column .about__column_right .b
 }
 
 body header .navigation .nav .about:hover .about__column a {
+  color: var(--dark-blue) !important;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  position: relative;
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+}
+
+body header .navigation .employment {
+  list-style-type: none;
+  padding: 0.5rem;
+  position: relative;
+}
+
+body header .navigation .employment .employment__column {
+  position: absolute;
+  top: 100%;
+  padding: 0.9rem;
+  border-radius: 0.25rem;
+  z-index: 999;
+  display: none;
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+}
+
+body header .navigation .employment:hover .employment__column {
+  position: absolute;
+  left: -32rem;
+  width: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+body header .navigation .employment:hover .employment__column .employment__column_one,
+body header .navigation .employment:hover .employment__column .employment__column_two,
+body header .navigation .employment:hover .employment__column .employment__column_three,
+body header .navigation .employment:hover .employment__column .employment__column_four {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+body header .navigation .employment:hover .employment__column a {
   color: var(--dark-blue) !important;
   text-transform: capitalize;
   padding: 0.5rem 0;
