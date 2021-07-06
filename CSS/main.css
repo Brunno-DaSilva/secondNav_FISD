@@ -80,9 +80,6 @@ body header .navigation {
   background: var(--dark-blue);
   padding: 1.1rem 0.5rem;
   /*================================
-            EMPLOYMENT  Columns       
-        ================================*/
-  /*================================
                     ICONS
         ================================*/
 }
@@ -110,6 +107,9 @@ body header .navigation .nav {
           align-items: center;
   /*================================
           ABOUT Columns       
+        ================================*/
+  /*================================
+            EMPLOYMENT  Columns       
         ================================*/
 }
 
@@ -247,23 +247,7 @@ body header .navigation .nav .about:hover .about__column {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-body header .navigation .nav .about:hover .about__column .about__column_left {
-  width: 39%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
+body header .navigation .nav .about:hover .about__column .about__column_left,
 body header .navigation .nav .about:hover .about__column .about__column_middle {
   width: 39%;
   display: -webkit-box;
@@ -273,12 +257,12 @@ body header .navigation .nav .about:hover .about__column .about__column_middle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body header .navigation .nav .about:hover .about__column .about__column_right {
@@ -290,8 +274,9 @@ body header .navigation .nav .about:hover .about__column .about__column_right {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body header .navigation .nav .about:hover .about__column .about__column_right .button__light_green,
@@ -310,13 +295,13 @@ body header .navigation .nav .about:hover .about__column a {
   transition: ease-in-out 0.4s;
 }
 
-body header .navigation .employment {
+body header .navigation .nav .employment {
   list-style-type: none;
   padding: 0.5rem;
   position: relative;
 }
 
-body header .navigation .employment .employment__column {
+body header .navigation .nav .employment .employment__column {
   position: absolute;
   top: 100%;
   padding: 0.9rem;
@@ -327,20 +312,20 @@ body header .navigation .employment .employment__column {
   transition: ease-in-out 0.4s;
 }
 
-body header .navigation .employment:hover .employment__column {
+body header .navigation .nav .employment:hover .employment__column {
   position: absolute;
   left: -32rem;
-  width: 60rem;
+  width: 69rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: row !important;
-          flex-direction: row !important;
-  -webkit-box-pack: start !important;
-      -ms-flex-pack: start !important;
-          justify-content: flex-start !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -348,12 +333,12 @@ body header .navigation .employment:hover .employment__column {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-body header .navigation .employment:hover .employment__column .employment__column_one,
-body header .navigation .employment:hover .employment__column .employment__column_two,
-body header .navigation .employment:hover .employment__column .employment__column_three,
-body header .navigation .employment:hover .employment__column .employment__column_four {
-  width: 25%;
-  height: 100%;
+body header .navigation .nav .employment:hover .employment__column .employment__column_one,
+body header .navigation .nav .employment:hover .employment__column .employment__column_two,
+body header .navigation .nav .employment:hover .employment__column .employment__column_three,
+body header .navigation .nav .employment:hover .employment__column .employment__column_four {
+  width: 20%;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,12 +346,23 @@ body header .navigation .employment:hover .employment__column .employment__colum
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-body header .navigation .employment:hover .employment__column a {
+body header .navigation .nav .employment:hover .employment__column .employment__column_two {
+  width: 30%;
+}
+
+body header .navigation .nav .employment:hover .employment__column .employment__column_four {
+  width: 28%;
+}
+
+body header .navigation .nav .employment:hover .employment__column a {
   color: var(--dark-blue) !important;
   text-transform: capitalize;
   padding: 0.5rem 0;

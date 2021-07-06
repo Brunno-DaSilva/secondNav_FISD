@@ -205,26 +205,20 @@ body {
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
               0 10px 10px rgba(0, 0, 0, 0.22);
 
-            .about__column_left {
-              width: 39%;
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-start;
-              align-items: flex-start;
-            }
+            .about__column_left,
             .about__column_middle {
               width: 39%;
               display: flex;
               flex-direction: column;
-              justify-content: center;
               align-items: flex-start;
+              justify-content: space-between;
             }
 
             .about__column_right {
               width: 20%;
               display: flex;
               flex-direction: column;
-              justify-content: space-around;
+              justify-content: space-between;
               .button__light_green,
               .button__light_blue,
               .button__orange,
@@ -245,56 +239,63 @@ body {
           // // Uncomment for troubleshoot
           // border: 1px solid #BADA55;
         }
-      }
-
-      /*================================
+        /*================================
             EMPLOYMENT  Columns       
         ================================*/
 
-      .employment {
-        // =>>// Uncomment for troubleshoot
-        // border: 1px solid #bada55;
+        .employment {
+          // =>>// Uncomment for troubleshoot
+          // border: 1px solid #bada55;
 
-        list-style-type: none;
-        padding: 0.5rem;
-        position: relative;
+          list-style-type: none;
+          padding: 0.5rem;
+          position: relative;
 
-        .employment__column {
-          position: absolute;
-          top: 100%;
-          padding: 0.9rem;
-          border-radius: 0.25rem;
-          z-index: 999;
-          display: none;
-          transition: ease-in-out 0.4s;
-        }
-        &:hover .employment__column {
-          position: absolute;
-          left: -32rem;
-          width: 60rem;
-          display: flex;
-          flex-direction: row !important;
-          justify-content: flex-start !important;
-          align-items: stretch;
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-            0 10px 10px rgba(0, 0, 0, 0.22);
-
-          .employment__column_one,
-          .employment__column_two,
-          .employment__column_three,
-          .employment__column_four {
-            width: 25%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-          }
-          a {
-            color: var(--dark-blue) !important;
-            text-transform: capitalize;
-            padding: 0.5rem 0;
-            position: relative;
+          .employment__column {
+            position: absolute;
+            top: 100%;
+            padding: 0.9rem;
+            border-radius: 0.25rem;
+            z-index: 999;
+            display: none;
             transition: ease-in-out 0.4s;
+          }
+          &:hover .employment__column {
+            position: absolute;
+            left: -32rem;
+            width: 69rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.22);
+
+            .employment__column_one,
+            .employment__column_two,
+            .employment__column_three,
+            .employment__column_four {
+              width: 20%;
+              padding: 1rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+            }
+            .employment__column_two {
+              width: 30%;
+            }
+            .employment__column_four {
+              width: 28%;
+            }
+
+            a {
+              color: var(--dark-blue) !important;
+              text-transform: capitalize;
+              padding: 0.5rem 0;
+              position: relative;
+              transition: ease-in-out 0.4s;
+            }
           }
         }
       }
