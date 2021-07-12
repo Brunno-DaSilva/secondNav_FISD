@@ -180,6 +180,7 @@ body {
             //  COLOR:
             .button__orange {
               background-color: var(--orange);
+              color: var(--OffWhite) !important;
             }
 
             .button__yellow {
@@ -214,6 +215,13 @@ body {
               justify-content: space-between;
             }
 
+            a {
+              color: var(--dark-blue) !important;
+              text-transform: capitalize;
+              padding: 0.5rem 0;
+              position: relative;
+              transition: ease-in-out 0.4s;
+            }
             .about__column_right {
               width: 20%;
               display: flex;
@@ -224,21 +232,55 @@ body {
               .button__orange,
               .button__yellow {
                 text-transform: uppercase;
+                color: var(--OffWhite) !important;
               }
-            }
-
-            a {
-              color: var(--dark-blue) !important;
-              text-transform: capitalize;
-              padding: 0.5rem 0;
-              position: relative;
-              transition: ease-in-out 0.4s;
             }
           }
 
           // // Uncomment for troubleshoot
-          // border: 1px solid #BADA55;
+          //          border: 1px solid #bada55;
         }
+
+        /*================================
+            School  Columns       
+        ================================*/
+
+        .schools {
+          .schools__container {
+            position: absolute;
+            top: 100%;
+            padding: 0.9rem;
+            border-radius: 0.25rem;
+            z-index: 999;
+            display: none;
+            transition: ease-in-out 0.4s;
+          }
+          &:hover .schools__container {
+            position: absolute;
+            left: -25.5rem;
+            width: 60rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.22);
+            .schools__tabs {
+              border: 1px solid #bada55;
+              width: 99%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              button {
+                cursor: pointer;
+                color: var(--dark-blue);
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+
         /*================================
             EMPLOYMENT  Columns       
         ================================*/
@@ -367,7 +409,6 @@ body {
   }
   .active[data-tab-content] {
     display: block !important;
-    color: var(--dark-blue);
-    background-color: #e95b37;
+    color: var(--light-blue);
   }
 }
