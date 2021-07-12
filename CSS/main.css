@@ -315,6 +315,7 @@ body header .navigation .nav .schools:hover .schools__container {
   position: absolute;
   left: -25.5rem;
   width: 60rem;
+  min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

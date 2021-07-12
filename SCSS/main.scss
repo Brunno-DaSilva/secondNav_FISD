@@ -236,7 +236,6 @@ body {
               }
             }
           }
-
           // // Uncomment for troubleshoot
           //          border: 1px solid #bada55;
         }
@@ -259,6 +258,7 @@ body {
             position: absolute;
             left: -25.5rem;
             width: 60rem;
+            min-height: 600px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
