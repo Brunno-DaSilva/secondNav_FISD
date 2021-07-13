@@ -9,6 +9,7 @@
   --orange: #e95b37;
   --OffWhite: #f8f8f8;
 }
+
 *,
 *::before,
 *::after {
@@ -266,7 +267,6 @@ body {
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
               0 10px 10px rgba(0, 0, 0, 0.22);
             .schools__tabs {
-              border: 1px solid #bada55;
               width: 99%;
               display: flex;
               justify-content: space-between;
@@ -276,6 +276,7 @@ body {
                 cursor: pointer;
                 color: var(--dark-blue);
                 font-size: 1.3rem;
+                background-color: transparent !important;
               }
             }
           }
@@ -408,7 +409,6 @@ body {
     display: none;
   }
   .active[data-tab-content] {
-    display: block !important;
-    color: var(--light-blue);
+    display: flex !important;
   }
 }

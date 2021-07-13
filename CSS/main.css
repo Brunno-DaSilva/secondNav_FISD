@@ -334,7 +334,6 @@ body header .navigation .nav .schools:hover .schools__container {
 }
 
 body header .navigation .nav .schools:hover .schools__container .schools__tabs {
-  border: 1px solid #bada55;
   width: 99%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,6 +350,7 @@ body header .navigation .nav .schools:hover .schools__container .schools__tabs b
   cursor: pointer;
   color: var(--dark-blue);
   font-size: 1.3rem;
+  background-color: transparent !important;
 }
 
 body header .navigation .nav .employment {
@@ -498,7 +498,8 @@ body [data-tab-content] {
 }
 
 body .active[data-tab-content] {
-  display: block !important;
-  color: var(--light-blue);
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 /*# sourceMappingURL=main.css.map */
