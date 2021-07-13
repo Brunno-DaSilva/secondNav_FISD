@@ -82,7 +82,7 @@ body {
         // // Uncomment for troubleshoot
         // border: 1px solid #BADA55;
 
-        li {
+        .nav__primary-item {
           list-style-type: none;
           padding: 0.5rem;
           position: relative;
@@ -115,14 +115,6 @@ body {
             }
           }
 
-          a {
-            color: var(--OffWhite);
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.1rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-          }
           // // Uncomment for troubleshoot
           // border: 1px solid #BADA55;
         }
@@ -246,38 +238,123 @@ body {
         ================================*/
 
         .schools {
-          .schools__container {
+          list-style-type: none;
+          padding: 0.5rem;
+          position: relative;
+
+          .school__column {
             position: absolute;
             top: 100%;
             padding: 0.9rem;
+            background-color: var(--OffWhite);
             border-radius: 0.25rem;
             z-index: 999;
-            display: none;
+            // display: none;
             transition: ease-in-out 0.4s;
+            border: 1px solid rgb(0, 255, 21);
           }
-          &:hover .schools__container {
-            position: absolute;
-            left: -25.5rem;
-            width: 60rem;
-            min-height: 600px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: stretch;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-              0 10px 10px rgba(0, 0, 0, 0.22);
-            .schools__tabs {
-              width: 99%;
+        }
+        &:hover .school__column {
+          position: absolute;
+          left: -30rem;
+          width: 60rem;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: stretch;
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+
+          .schooltab__container {
+            margin: 0 auto;
+            border: 1px solid red;
+            background-color: var(--OffWhite);
+            color: var(--dark-blue) !important;
+
+            .schooltab__container ul {
+              list-style: none;
+              padding: 0;
+            }
+            .schooltab__container ul li {
+              display: inline-flex;
+            }
+
+            .schooltab__container ul li a {
+              text-decoration: none;
+              color: var(--dark-blue) !important;
+              padding: 10px;
+              transition: all 0.3s ease-in-out;
+              border-bottom: 1px solid transparent;
+            }
+            .schooltab__container ul li a:hover {
+              color: var(--light-blue);
+            }
+
+            .nav .active a {
+              transition: all 0.3s ease-in-out;
+              color: var(--dark-blue);
+              border-bottom: 3px solid #ffe600;
+            }
+
+            .tab-pane {
+              display: none;
+            }
+
+            .tab-pane.active {
+              display: block;
+            }
+
+            .elementary__container,
+            .middle__container,
+            .high__container,
+            .program_centers__container {
+              padding: 0.5rem;
               display: flex;
               justify-content: space-between;
-              align-items: center;
+              flex-wrap: wrap;
+            }
 
-              button {
-                cursor: pointer;
-                color: var(--dark-blue);
-                font-size: 1.3rem;
-                background-color: transparent !important;
-              }
+            .elementary__container .schools__elementary_item,
+            .middle__container .schools__middle_item,
+            .high__container .schools__high_item,
+            .program_centers__container .schools__program_centers_item {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              min-height: 300px;
+              padding: 0.5rem;
+              margin: 0.3rem;
+            }
+
+            /* Specific Style */
+            .middle__container .schools__middle_item,
+            .high__container .schools__high_item,
+            .program_centers__container .schools__program_centers_item {
+              justify-content: flex-start;
+              align-items: flex-start;
+            }
+
+            /* General Style  */
+
+            .elementary__container .schools__elementary_item a,
+            .middle__container .schools__middle_item a,
+            .high__container .schools__high_item a,
+            .program_centers__container .schools__program_centers_item a {
+              text-decoration: none;
+              color: var(--dark-blue);
+            }
+
+            /* General Style  */
+
+            .middle__container .schools__middle_item a,
+            .high__container .schools__high_item a,
+            .program_centers__container .schools__program_centers_item a {
+              padding-bottom: 1.5rem;
+            }
+
+            .elementary__container .schools__elementary_item a:hover {
+              text-decoration: none;
+              color: var(--orange);
             }
           }
         }
@@ -404,11 +481,20 @@ body {
   .padding-bottom {
     padding-bottom: 0.7rem;
   }
-
-  [data-tab-content] {
-    display: none;
+  .nav_white_text {
+    color: var(--OffWhite);
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
-  .active[data-tab-content] {
-    display: flex !important;
+  .nav_dark_text {
+    color: var(--dark-blue);
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
 }

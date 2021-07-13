@@ -1,16 +1,22 @@
-const tabs = document.querySelectorAll("[data-tab-target]");
-const tabContents = document.querySelectorAll("[data-tab-content]");
+// In Branch School tab
+function onTabClick(event) {
+  let activeTabs = document.querySelectorAll(".active");
 
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.tabTarget);
-    tabContents.forEach((tabContent) => {
-      tabContent.classList.remove("active");
-    });
-    tabs.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-    tab.classList.add("active");
-    target.classList.add("active");
+  // deactivate existing active tab and panel
+  // for( let i = 0; i < activeTabs.length; i++) {
+  //   activeTabs[i].className = activeTabs[i].className.replace('active', '');
+  // }
+
+  activeTabs.forEach(function (tab) {
+    tab.className = tab.className.replace("active", "");
   });
-});
+
+  // activate new tab and panel
+  event.target.parentElement.className += " active";
+  document.getElementById(event.target.href.split("#")[1]).className +=
+    " active";
+}
+
+const element = document.getElementById("nav-tab");
+
+element.addEventListener("click", onTabClick, false);
